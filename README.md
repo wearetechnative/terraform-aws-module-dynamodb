@@ -39,4 +39,5 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_table_arn"></a> [table\_arn](#output\_table\_arn) | n/a |
+| <a name="output_table_name"></a> [table\_name](#output\_table\_name) | n/a |
 <!-- END_TF_DOCS -->
