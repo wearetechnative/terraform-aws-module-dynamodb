@@ -29,10 +29,15 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_additional_tags"></a> [additional\_tags](#input\_additional\_tags) | Additional tags to be added to resources. | `map(string)` | `{}` | no |
+| <a name="input_global_secondary_indexes"></a> [global\_secondary\_indexes](#input\_global\_secondary\_indexes) | Define global secondary indexes using this variable. | <pre>list(object({<br>    name = string<br>    hash_key = string<br>    hash_key_type = string<br>  }))</pre> | `[]` | no |
 | <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | KMS key to use for encrypting RDS instances. | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Prefix name for DynamoDB. Must be unique within the region. | `string` | n/a | yes |
 | <a name="input_partition_key"></a> [partition\_key](#input\_partition\_key) | Partition key for DynamoDB table. | `string` | n/a | yes |
 | <a name="input_partition_key_type"></a> [partition\_key\_type](#input\_partition\_key\_type) | Partition key type for DynamoDB table, can be S, N or B. | `string` | n/a | yes |
+| <a name="input_range_key"></a> [range\_key](#input\_range\_key) | Sort key for DynamoDB table. | `string` | `null` | no |
+| <a name="input_range_key_type"></a> [range\_key\_type](#input\_range\_key\_type) | Sort key type for DynamoDB table, can be S, N or B. | `string` | `null` | no |
+| <a name="input_ttl_attribute_name"></a> [ttl\_attribute\_name](#input\_ttl\_attribute\_name) | Optional name of TTL attribute. | `string` | `null` | no |
 
 ## Outputs
 
