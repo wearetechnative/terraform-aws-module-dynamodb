@@ -62,8 +62,7 @@ resource "aws_dynamodb_table" "this" {
   tags = merge(var.additional_tags,
     {
       Type          = "DYNAMODB",
-      BackupEnabled = "${var.enable_backup}",
-      BackupEnabled = locals.backup
+      BackupEnabled = "${var.enable_backup}"
   })
 
   lifecycle {
