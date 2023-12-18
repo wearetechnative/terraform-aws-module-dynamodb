@@ -55,5 +55,5 @@ variable "additional_tags" {
 variable "enable_backup" {
   description = "Enable aws backups using the tags define"
   type        = bool
-  default     = true
+  default     = false
 }
