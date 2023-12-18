@@ -1,6 +1,6 @@
 resource "aws_dynamodb_table" "this" {
-  name     = var.name
-  hash_key = var.partition_key
+  name      = var.name
+  hash_key  = var.partition_key
   range_key = var.range_key
 
   attribute {
@@ -42,7 +42,7 @@ resource "aws_dynamodb_table" "this" {
 
     content {
       attribute_name = var.ttl_attribute_name
-      enabled = true
+      enabled        = true
     }
   }
 
@@ -50,16 +50,21 @@ resource "aws_dynamodb_table" "this" {
     for_each = var.global_secondary_indexes
 
     content {
-      name               = global_secondary_index.value.name
-      hash_key           = global_secondary_index.value.hash_key
-      projection_type    = "KEYS_ONLY"
+      name            = global_secondary_index.value.name
+      hash_key        = global_secondary_index.value.hash_key
+      projection_type = "KEYS_ONLY"
     }
   }
 
   stream_enabled = false
   table_class    = "STANDARD"
 
-  tags = var.additional_tags
+  tags = merge(var.additional_tags,
+    {
+      Type          = "DYNAMODB",
+      BackupEnabled = "${var.enable_backup}",
+      BackupEnabled = locals.backup
+  })
 
   lifecycle {
     prevent_destroy = true
