@@ -1,4 +1,4 @@
-# Terraform AWS [dynamodb] ![](https://img.shields.io/github/actions/workflow/status/TechNative-B-V/terraform-aws-module-name/tflint.yaml?style=plastic)
+# Terraform AWS [dynamodb] ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-module-dynamodb/tflint.yaml?style=plastic)
 
 This module implements DynamoDB and enforces or (at least) encourages best practices by default.
 
