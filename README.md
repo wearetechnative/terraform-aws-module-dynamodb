@@ -6,7 +6,11 @@ This module implements DynamoDB and enforces or (at least) encourages best pract
 
 ## How does it work
 
-See the variables of this module. The current staten of this module is self-explanatory given some basic knowledge of DynamoDB.
+### First use after you clone this repository or when .pre-commit-config.yaml is updated
+
+Run `pre-commit install` to install any guardrails implemented using pre-commit.
+
+See [pre-commit installation](https://pre-commit.com/#install) on how to install pre-commit.
 
 <!-- BEGIN_TF_DOCS -->
 ## Providers
