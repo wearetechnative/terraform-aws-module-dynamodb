@@ -12,6 +12,10 @@ Run `pre-commit install` to install any guardrails implemented using pre-commit.
 
 See [pre-commit installation](https://pre-commit.com/#install) on how to install pre-commit.
 
+## Usage
+
+See the [examples](./examples) of some basic scenarios.
+
 <!-- BEGIN_TF_DOCS -->
 ## Providers
 
