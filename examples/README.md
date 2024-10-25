@@ -1,6 +1,6 @@
 Create one or more examples here...
 
-``
+```hcl 
 module "example-dynamodb-technative" {
   source = "git@github.com:wearetechnative/terraform-aws-module-dynamodb.git"
 
