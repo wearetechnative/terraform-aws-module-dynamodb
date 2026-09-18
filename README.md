@@ -1,4 +1,4 @@
-# Terraform AWS dynamodb ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-module-dynamodb/tflint.yaml?style=plastic)
+# Terraform AWS dynamodb ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-module-dynamodb/lint.yaml?branch=main&style=plastic&label=lint) ![](https://img.shields.io/github/actions/workflow/status/wearetechnative/terraform-aws-module-dynamodb/security-scan.yaml?branch=main&style=plastic&label=security)
 
 This module implements DynamoDB and enforces or (at least) encourages best practices by default.
 
